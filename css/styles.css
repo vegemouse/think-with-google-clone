@@ -42,6 +42,10 @@ nav {
   display: none;
 }
 
+#menu-links li:hover {
+  cursor: pointer;
+}
+
 #nav-icons {
   margin-top: 14px;
 }
@@ -62,6 +66,10 @@ nav {
   overflow: hidden;
 }
 
+.box:hover {
+  cursor: pointer;
+}
+
 .box:first-of-type {
   height: 400px;
   background-color: lightgrey;
@@ -80,7 +88,7 @@ nav {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  transition: transform 300ms;
+  transition: transform 300ms ease-in-out;
 }
 
 .image img:hover {
@@ -146,11 +154,11 @@ nav {
   object-fit: cover;
   margin-right: 15px;
   float: left;
-  transition: transform 300ms;
+  transition: transform 300ms ease-in-out;
 }
 
 #caption-box-2 img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 #caption-box-2 {
@@ -190,11 +198,11 @@ nav {
   object-fit: cover;
   margin-right: 15px;
   float: left;
-  transition: transform 300ms;
+  transition: transform 300ms ease-in-out;
 }
 
 #caption-box-3 img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 #caption-box-3 {
