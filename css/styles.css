@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+div {
+  /*border: 1px solid black;*/
+}
+
+.container {
+  border: 0;
+}
+
+nav {
+  width: 100%;
+  height: 64px;
+  border: 0;
+  border-bottom: 2px solid #ded;
+}
+
+#logo {
+  height: 28px;
+  float: left;
+  margin-top: 18px;
+  margin-left: 32px;
+}
+
+#links {
+  margin-right: 15px;
+  margin-top: 2px;
+  float: right;
+}
+
+#menu-links {
+  display: none;
+}
+
+
+.box:first-of-type {
+  height: 400px;
+  background-color: lightgrey;
+  position: relative;
+  background-image: url(../img/black-friday.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+
+#caption-box-1 {
+  position: absolute;
+  bottom: 13px;
+  width: 92%;
+  height: 118px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #263238;
+  color: #eee;
+  padding: 16px;
+}
+
+#caption-box-1 h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.38em;
+  margin: 0;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: .5px;
+}
+
+.tags {
+  margin:  12px 0 5px 0;
+  padding: 0;
+  color: #bbb;
+  font-weight: lighter;
+  font-size: 0.83em;
+  letter-spacing: 0.43px;
+}
+
+.description {
+  display: none;
+}
+
+.tiny {
+  font-size: 0.1em;
+}
+
+.box:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.box:nth-of-type(2) {
+  width: 100%;
+  min-height: 118px;
+  background-color: #0D47A1;
+}
+
+.box:nth-of-type(2) img {
+  width: 128px;
+  min-height: 118px;
+  object-fit: cover;
+  margin-right: 15px;
+  float: left;
+}
+
+#caption-box-2 {
+  width: 100%;
+  color: #eee;
+}
+
+.box-content {
+  padding: 12px 20px 0px 4px;
+  min-height: 98px;
+
+}
+
+#caption-box-2 h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.07em;
+  font-weight: 200;
+  line-height: 25px;
+  letter-spacing: .5px;
+}
+
+.box-content p {
+  padding: 0;
+  margin-top: 5px;
+}
+
+/* START BOX 3 */
+
+.box:nth-of-type(3) {
+  width: 100%;
+  background-color: #009688;
+}
+
+.box:nth-of-type(3) img {
+  width: 128px;
+  min-height: 118px;
+  object-fit: cover;
+  margin-right: 15px;
+  float: left;
+}
+
+#caption-box-3 {
+  width: 100%;
+  color: #eee;
+}
+
+#caption-box-3 h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.07em;
+  font-weight: 200;
+  line-height: 25px;
+  letter-spacing: .5px;
+}
+
+
+@media screen and (min-width : 600px) {
+
+  .box:first-of-type {
+    height: 413px;
+  }
+
+  .description {
+    display: inline-block;
+  }
+
+  #caption-box-1 {
+    width: 304px;
+    height: 291px;
+    bottom: 30px;
+    left: 30px;
+    padding: 25px 32px;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: lighter;
+  }
+
+  #caption-box-1 h3 {
+    font-size: 1.65em;
+    line-height: 35px;
+  }
+
+  #caption-box-1 .description {
+    padding-top: 18px;
+    font-size: 0.83em;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+  }
+
+  .box-content {
+    padding: 10px 17px;
+  }
+
+  .box-content p {
+    padding-top: 3px;
+    padding-bottom: 8px;
+  }
+
+  #caption-box-2 h3, #caption-box-3 h3 {
+    font-size: 1.16em;
+    line-height: 23px;
+  }
+
+  .box:nth-of-type(2) {
+    float: left;
+    width: 50%;
+  }
+
+  .box:nth-of-type(2) img, .box:nth-of-type(3) img  {
+    float: none;
+    width: 100%;
+    height: 171px;
+  }
+
+  .box:nth-of-type(3) {
+    width: 50%;
+    float: left;
+  }
+
+}
+
+@media screen and (min-width : 1000px) {
+
+  nav {
+    overflow: hidden;
+  }
+
+  #nav-icons {
+    display: none;
+  }
+
+  #menu-links {
+    display: inline-block;
+    margin: 0;
+  }
+
+  #menu-links li {
+    display: inline-block;
+    height: 64px;
+    margin-top: -16px;
+    padding: 25px 10px;
+  }
+
+  #menu-links a {
+    color: #666;
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 0.99em;
+  }
+
+  #menu-links a img {
+    position: relative;
+    top: 5px;
+    opacity: 0.7;
+  }
+
+  #menu-links a img:hover {
+    opacity: 0.8;
+  }
+
+  #menu-links li:not(:last-child):hover {
+    background-color: #eee;
+  }
+
+
+  .box:first-of-type {
+    height: 544px;
+    width: 66.666%;
+    float: left;
+  }
+
+  .box:nth-of-type(2), .box:nth-of-type(3) {
+    float: left;
+    width: 33.333%;
+    height: 272px;
+  }
+
+  #caption-box-1 {
+    width: 304px;
+    height: 300px;
+    bottom: 30px;
+    left: 30px;
+    padding: 25px 32px;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: lighter;
+  }
+
+  #caption-box-1 h3 {
+    font-size: 1.8em;
+    line-height: 37px;
+  }
+
+  .box:nth-of-type(2) img, .box:nth-of-type(3) img  {
+    height: 185px;
+  }
+
+  .box:nth-of-type(2), .box:nth-of-type(3)  {
+    font-size: 1.05em;
+  }
+
+}
