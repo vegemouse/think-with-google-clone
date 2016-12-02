@@ -18,7 +18,7 @@ nav {
   height: 28px;
   float: left;
   margin-top: 18px;
-  margin-left: 32px;
+  margin-left: 15px;
 }
 
 #country {
@@ -212,6 +212,10 @@ nav {
 
 
 @media screen and (min-width : 600px) {
+
+  #logo {
+    margin-left: 32px;
+  }
 
   .box:first-of-type {
     height: 413px;
