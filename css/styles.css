@@ -3,11 +3,6 @@
   margin: 0;
 }
 
-
-div {
-  /*border: 1px solid black;*/
-}
-
 .container {
   border: 0;
 }
@@ -83,8 +78,12 @@ nav {
 .image img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
 #caption-box-1 {
@@ -143,10 +142,14 @@ nav {
 .box:nth-of-type(2) img {
   width: 128px;
   min-height: 118px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-right: 15px;
   float: left;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
 #caption-box-2 {
@@ -183,10 +186,14 @@ nav {
 .box:nth-of-type(3) img {
   width: 128px;
   min-height: 118px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-right: 15px;
   float: left;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
 
@@ -361,15 +368,18 @@ nav {
   }
 
   .image img:hover {
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 
   #caption-box-2 img:hover {
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 
   #caption-box-3 img:hover {
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 
 }
