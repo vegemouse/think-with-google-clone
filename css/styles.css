@@ -36,6 +36,21 @@ nav {
   display: none;
 }
 
+#nav-icons {
+  margin-top: 14px;
+}
+
+#nav-icons a img:first-of-type {
+  margin-left: 12px;
+}
+
+#nav-icons a img {
+  opacity: 0.8;
+}
+
+#nav-icons a img:hover {
+  opacity: 1;
+}
 
 .box:first-of-type {
   height: 400px;
@@ -257,11 +272,11 @@ nav {
   #menu-links a img {
     position: relative;
     top: 5px;
-    opacity: 0.7;
+    opacity: 0.8;
   }
 
   #menu-links a img:hover {
-    opacity: 0.8;
+    opacity: 1;
   }
 
   #menu-links li:not(:last-child):hover {
@@ -270,7 +285,7 @@ nav {
 
 
   .box:first-of-type {
-    height: 544px;
+    height: 579px;
     width: 66.666%;
     float: left;
   }
@@ -278,7 +293,7 @@ nav {
   .box:nth-of-type(2), .box:nth-of-type(3) {
     float: left;
     width: 33.333%;
-    height: 272px;
+    height: 289.5px;
   }
 
   #caption-box-1 {
@@ -303,6 +318,12 @@ nav {
 
   .box:nth-of-type(2), .box:nth-of-type(3)  {
     font-size: 1.05em;
+  }
+
+  #caption-box-2 h3, #caption-box-3 h3{
+    font-size: 1.1em;
+    font-weight: light;
+    letter-spacing: 1px;
   }
 
 }
