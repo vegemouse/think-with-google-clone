@@ -26,6 +26,12 @@ nav {
   margin-left: 32px;
 }
 
+#country {
+  margin-top: 18px;
+  display: none;
+}
+
+
 #links {
   margin-right: 15px;
   margin-top: 2px;
@@ -52,14 +58,33 @@ nav {
   opacity: 1;
 }
 
+.box {
+  overflow: hidden;
+}
+
 .box:first-of-type {
   height: 400px;
   background-color: lightgrey;
   position: relative;
-  background-image: url(../img/black-friday.jpg);
+  /*background-image: url(../img/black-friday.jpg);*/
   background-size: cover;
   background-position: center;
   margin: 0;
+}
+
+.image {
+  height: 100%;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 300ms;
+}
+
+.image img:hover {
+  transform: scale(1.05);
 }
 
 #caption-box-1 {
@@ -75,6 +100,7 @@ nav {
   color: #eee;
   padding: 16px;
 }
+
 
 #caption-box-1 h3 {
   font-family: 'Roboto', sans-serif;
@@ -120,6 +146,11 @@ nav {
   object-fit: cover;
   margin-right: 15px;
   float: left;
+  transition: transform 300ms;
+}
+
+#caption-box-2 img:hover {
+  transform: scale(1.1);
 }
 
 #caption-box-2 {
@@ -159,6 +190,11 @@ nav {
   object-fit: cover;
   margin-right: 15px;
   float: left;
+  transition: transform 300ms;
+}
+
+#caption-box-3 img:hover {
+  transform: scale(1.1);
 }
 
 #caption-box-3 {
@@ -245,6 +281,11 @@ nav {
   nav {
     overflow: hidden;
   }
+
+  #country {
+    display: inline;
+  }
+
 
   #nav-icons {
     display: none;
