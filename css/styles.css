@@ -72,11 +72,7 @@ nav {
 
 .box:first-of-type {
   height: 400px;
-  background-color: lightgrey;
   position: relative;
-  /*background-image: url(../img/black-friday.jpg);*/
-  background-size: cover;
-  background-position: center;
   margin: 0;
 }
 
@@ -89,10 +85,6 @@ nav {
   width: 100%;
   object-fit: cover;
   transition: transform 300ms ease-in-out;
-}
-
-.image img:hover {
-  transform: scale(1.05);
 }
 
 #caption-box-1 {
@@ -120,9 +112,9 @@ nav {
 }
 
 .tags {
-  margin:  12px 0 5px 0;
+  margin: 12px 0 5px 0;
   padding: 0;
-  color: #bbb;
+  color: rgba(200, 200, 200, 0.9);
   font-weight: lighter;
   font-size: 0.83em;
   letter-spacing: 0.43px;
@@ -155,10 +147,6 @@ nav {
   margin-right: 15px;
   float: left;
   transition: transform 300ms ease-in-out;
-}
-
-#caption-box-2 img:hover {
-  transform: scale(1.05);
 }
 
 #caption-box-2 {
@@ -201,9 +189,6 @@ nav {
   transition: transform 300ms ease-in-out;
 }
 
-#caption-box-3 img:hover {
-  transform: scale(1.05);
-}
 
 #caption-box-3 {
   width: 100%;
@@ -373,6 +358,18 @@ nav {
     font-size: 1.1em;
     font-weight: light;
     letter-spacing: 1px;
+  }
+
+  .image img:hover {
+    transform: scale(1.05);
+  }
+
+  #caption-box-2 img:hover {
+    transform: scale(1.05);
+  }
+
+  #caption-box-3 img:hover {
+    transform: scale(1.05);
   }
 
 }
